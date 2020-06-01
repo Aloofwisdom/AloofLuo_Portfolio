@@ -1,0 +1,116 @@
+
+    body{
+        font-family: helvetica , Arial, sans-serif;
+        background-color: white;
+        color:gray;
+        padding: 0px;
+        margin: 0px;
+    }
+
+/*  */
+    header{
+        background-color: black;
+        height: 200px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(images/header1.jpg);
+    }
+/* up to 662px */
+
+   
+    li.logo{
+        width: auto;
+    }
+    li a:hover{
+        text-decoration: underline;
+    }
+   
+    section.features {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .features figure{
+        margin: auto;
+        text-align: center;
+    }
+
+    .features figure img{
+        border-radius: 5px;
+        width: 200px;
+        max-width: 100%;
+        min-width: 200px;
+        height: 300px;
+        box-shadow: gray 0px 0px 5px;
+        border: white solid 1px;
+    }
+    
+
+
+    header ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    header ul .home{
+        margin-left: 0px;
+    }
+    header ul li{
+        display:inline-block;
+        /* width: 100px; */
+        margin-top: 50px;
+        margin-left:20px ;
+    }
+    .mobile {
+        display: none;
+    }
+
+    li a{  
+        color:black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+
+    .logo a{
+        display: inline-block;
+        width: 300px;
+        height: 90px;
+        background-image: url('images/logo.png');
+        background-size: 300px;
+        background-repeat: no-repeat;
+        text-indent: -99999px;
+        position: relative;
+        top:-25px;
+    }
+
+
+/* Footer */
+    footer{
+        background-color: black;
+        color:gray;
+        font-size: 12px;
+        text-align: center;
+        padding: 20px;
+    }  
+
+
+    @media screen and (max-width: 662px) {
+        header .mobile{
+            display: inline-block;
+        }
+        header .desktop{
+            display: none;
+        }
+        header .logo{
+            position: relative;
+            top: -10px;
+        }
+        /* section.features{
+            display: block;
+        } */
+    }
